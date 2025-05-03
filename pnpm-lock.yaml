@@ -43,6 +43,8 @@ importers:
         specifier: ^0.17.0
         version: 0.17.0
 
+  apps/core: {}
+
   apps/shell: {}
 
 packages:

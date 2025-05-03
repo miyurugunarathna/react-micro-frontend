@@ -1,7 +1,12 @@
+import { lazy } from 'react';
+
+const Header = lazy(() => import('core/header'));
+
 function App() {
   return (
     <div>
-      <p>Hello!</p>
+      <Header />
+      <p>Hello! shell app</p>
     </div>
   );
 }

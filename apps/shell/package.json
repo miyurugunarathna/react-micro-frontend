@@ -1,0 +1,8 @@
+{
+  "name": "@app/shell",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rspack dev"
+  },
+  "packageManager": "pnpm@10.10.0"
+}

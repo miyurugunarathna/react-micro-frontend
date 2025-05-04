@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+      "@/*": ["./src/*"],
       "core/*": ["@mf-types/core/*"]
     }
   }

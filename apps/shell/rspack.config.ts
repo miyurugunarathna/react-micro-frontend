@@ -3,6 +3,7 @@ import FederatedTypesPlugin from '@module-federation/typescript';
 import { defineConfig } from '@rspack/cli';
 import rspack from '@rspack/core';
 import ReactRefreshPlugin from '@rspack/plugin-react-refresh';
+import { TanStackRouterRspack } from '@tanstack/router-plugin/rspack';
 import config from './module-federation.config';
 
 const isDev = process.env.NODE_ENV === 'development';
@@ -30,5 +31,6 @@ export default defineConfig({
           },
         },
       }),
+    TanStackRouterRspack({ target: 'react', autoCodeSplitting: true }),
   ].filter(Boolean),
 });

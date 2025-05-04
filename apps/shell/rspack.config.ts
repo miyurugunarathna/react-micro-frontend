@@ -1,3 +1,4 @@
+import path from 'node:path';
 import { ModuleFederationPlugin } from '@module-federation/enhanced/rspack';
 import FederatedTypesPlugin from '@module-federation/typescript';
 import { defineConfig } from '@rspack/cli';
@@ -16,6 +17,11 @@ export default defineConfig({
   },
   entry: {
     main: './src/main.tsx',
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
   },
   plugins: [
     new rspack.HtmlRspackPlugin({ template: './index.html' }),

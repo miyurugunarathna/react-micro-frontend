@@ -68,6 +68,9 @@ importers:
 
   apps/shell:
     dependencies:
+      '@internal/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@tanstack/react-router':
         specifier: ^1.119.0
         version: 1.119.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)

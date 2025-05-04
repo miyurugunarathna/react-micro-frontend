@@ -6,6 +6,7 @@
   },
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
+    "@internal/ui": "workspace:*",
     "@tanstack/react-router": "^1.119.0",
     "@tanstack/react-router-devtools": "^1.119.1"
   },

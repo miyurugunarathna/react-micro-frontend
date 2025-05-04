@@ -2,6 +2,7 @@ import Logo from '@internal/icons/logo';
 import { buttonVariants } from '@internal/ui/components/button';
 import { cn } from '@internal/ui/util';
 import { Link } from '@tanstack/react-router';
+import './styles.c.css';
 
 const links = [
   { label: 'Find a Store', url: '#' },
@@ -55,7 +56,7 @@ function Footer() {
       <div className="container mx-auto py-14">
         <div className="flex flex-col gap-20 w-full">
           <div className="flex flex-col gap-4 w-full items-center">
-            <div className="w-16">
+            <div className="w-20">
               <Logo />
             </div>
             <nav>
@@ -66,7 +67,7 @@ function Footer() {
                       to={link.url}
                       className={cn(buttonVariants({ variant: 'link' }))}
                     >
-                      {link.label}
+                      {link.label}x
                     </Link>
                   </li>
                 ))}

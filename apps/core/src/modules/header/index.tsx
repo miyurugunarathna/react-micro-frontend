@@ -4,6 +4,7 @@ import { Input } from '@internal/ui/components/input';
 import { cn } from '@internal/ui/util';
 import { Link } from '@tanstack/react-router';
 import { Heart, ShoppingBag } from 'lucide-react';
+import './styles.c.css';
 
 const links = [
   { label: 'New', url: '#' },
@@ -31,7 +32,7 @@ function Header() {
                     to={link.url}
                     className={cn(buttonVariants({ variant: 'link' }), 'p-0')}
                   >
-                    {link.label}x
+                    {link.label}
                   </Link>
                 </li>
               ))}

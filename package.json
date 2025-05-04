@@ -9,6 +9,7 @@
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
     "@module-federation/enhanced": "^0.13.1",
+    "lucide-react": "^0.507.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

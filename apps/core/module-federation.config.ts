@@ -5,6 +5,7 @@ export default createModuleFederationConfig({
   filename: 'remoteEntry.js',
   exposes: {
     './header': './src/modules/header/index.tsx',
+    './footer': './src/modules/footer/index.tsx',
   },
   shared: [
     {

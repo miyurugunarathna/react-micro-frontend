@@ -14,6 +14,9 @@ importers:
       '@tailwindcss/postcss':
         specifier: ^4.1.5
         version: 4.1.5
+      '@tanstack/react-router':
+        specifier: ^1.119.0
+        version: 1.119.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       lucide-react:
         specifier: ^0.507.0
         version: 0.507.0(react@19.1.0)
@@ -64,16 +67,20 @@ importers:
         specifier: ^0.17.0
         version: 0.17.0
 
-  apps/core: {}
+  apps/core:
+    dependencies:
+      '@internal/icons':
+        specifier: workspace:*
+        version: link:../../packages/icons
+      '@internal/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
 
   apps/shell:
     dependencies:
       '@internal/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@tanstack/react-router':
-        specifier: ^1.119.0
-        version: 1.119.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tanstack/react-router-devtools':
         specifier: ^1.119.1
         version: 1.119.1(@tanstack/react-router@1.119.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(@tanstack/router-core@1.119.0)(csstype@3.1.3)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(tiny-invariant@1.3.3)

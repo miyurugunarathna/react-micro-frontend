@@ -2,7 +2,9 @@
   "name": "@app/shell",
   "version": "1.0.0",
   "scripts": {
-    "dev": "rspack dev --port 3000"
+    "dev": "rspack dev --port 3000",
+    "build": "rspack build",
+    "start": "rspack serve --port 3000"
   },
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
